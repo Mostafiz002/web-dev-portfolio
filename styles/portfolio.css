@@ -246,3 +246,28 @@ footer ::placeholder{
     font-weight: 400;
     margin-bottom: 20px;
 }
+
+
+/* media quary */
+
+@media screen and (max-width: 576px) {
+    .slills-container, .resume-container ,footer{
+        flex-direction: column;
+    }
+
+    .experience-sub-title,.experience-description,.experience-sub-title,.experience-title{
+        text-align: left;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    .about-items{
+        flex-wrap: wrap;
+    }
+}
